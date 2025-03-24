@@ -1,0 +1,53 @@
+.test1{
+    background-color: red; 
+    width: 200px;
+    color: white;
+}  
+
+.test2{
+    
+    background-color: blue; 
+    width: 200px;
+    color: white;
+}
+
+.test3{
+    background-color: green; 
+    
+    width: 200px;
+    color: white;
+}
+
+.test4{
+    background-color: red; 
+    width: 200px;
+    color: white;
+}  
+
+.test5{
+    
+    background-color: blue; 
+    width: 200px;
+    color: white;
+}
+
+.test6{
+    background-color: green; 
+    
+    width: 200px;
+    color: white;
+}
+
+.test{
+    background-color: red; 
+    
+    width: 200px;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
