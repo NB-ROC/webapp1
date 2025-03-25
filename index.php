@@ -26,6 +26,12 @@
             echo '<br> <h1>productnaam:</h1> ' . $value['Productnaam'];
             echo '<br> <h1>prijs:</h1> ' . $value['Prijs'];
             echo '<br> <h1>afbeelding:</h1> ' . '<img src="' . $value['img'] . '">';
+           
+            echo '<form action="./dbcalls/delete.php" method="post">';
+            echo '<input type="hidden" name="ID" value="' . $value['ID'] .'">';
+            echo '<input type="submit" name="" value="delete" > ';
+            echo '</form>';
+
             echo '</div>';
         }
         ?>
