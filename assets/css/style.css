@@ -47,7 +47,19 @@
 
 main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.create{
+    padding: 10px;
+    background-color: rgb(186, 138, 138);
+}
+
+.admin{
+    padding: 10px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
 }

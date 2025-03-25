@@ -7,4 +7,4 @@ $stmt = $conn->prepare("DELETE FROM menuitems WHERE ID=:ID");
 $stmt->bindParam(":ID", $id);
 $stmt->execute();
 
-header('Location: ../index.php');
+header('Location: ../admin.php');
