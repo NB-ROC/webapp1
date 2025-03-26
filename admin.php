@@ -39,11 +39,17 @@
 
             //Het loopen van de database gegevens
             foreach ($result as $value) {
-                echo '<div class="test">';
-                echo '<br> <h1>productnaam:</h1> ' . $value['Productnaam'];
-                echo '<br> <h1>prijs:</h1> ' . $value['Prijs'];
-                echo '<br> <h1>afbeelding:</h1> ' . '<img src="' . $value['img'] . '">';
 
+                ?>
+                <form action="./dbcalls/update.php" method="post">
+                    <input type="text" name="productnaam" id="" value="<?php echo $value['Productnaam']; ?>">
+                    <input type="text" name="Prijs" id="" value="<?php echo $value['Prijs']; ?>">
+                    <input type="text" name="img" id="" value="<?php echo $value['img']; ?>">
+                    <button type="submit">Update</button>
+                </form>
+                <?php
+
+              
                 echo '<form action="./dbcalls/delete.php" method="post">';
                 echo '<input type="hidden" name="ID" value="' . $value['ID'] . '">';
                 echo '<input type="submit" name="" value="delete" > ';
