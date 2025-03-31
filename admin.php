@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+if(isset($_SESSION['username']))
+{
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +23,7 @@
     <main>
 
         <h1>admin</h1>
-
+    
         <section class="create">
             <h2>CREATE</h2>
             <form action="./dbcalls/create.php" method="post">
@@ -41,6 +51,7 @@
             foreach ($result as $value) {
 
                 ?>
+                
                 <form action="./dbcalls/update.php" method="post">
                     <input type="text" name="productnaam" id="" value="<?php echo $value['Productnaam']; ?>">
                     <input type="text" name="Prijs" id="" value="<?php echo $value['Prijs']; ?>">
@@ -68,3 +79,13 @@
 </body>
 
 </html>
+
+<?php
+
+        }
+        else{
+            header("location: ../index.php");
+        }
+
+
+?>
